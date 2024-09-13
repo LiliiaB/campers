@@ -26,7 +26,7 @@ export const CatalogList = () => {
   };
 
   return (
-    <section className={css.section}>
+    <div className={css.section}>
       {campersList.length > 0 ? (
         <>
           <ul className={css.list}>
@@ -41,8 +41,8 @@ export const CatalogList = () => {
           )}
         </>
       ) : (
-        <p className={css.noFound}>Not campers found.</p>
+        <p className={css.noFound}>No campers found</p>
       )}
-    </section>
+    </div>
   );
 };

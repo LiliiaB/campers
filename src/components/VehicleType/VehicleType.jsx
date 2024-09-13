@@ -1,14 +1,14 @@
 import clsx from "clsx";
 import Icon from "../Icon/Icon";
 import css from "./VehicleType.module.css";
-// import { useState } from 'react';
+
 import { useDispatch, useSelector } from "react-redux";
 import { selectVehicleType } from "../../redux/filters/selectors";
 import { changeVehicleType } from "../../redux/filters/slice.js";
 
 export const VehicleType = () => {
   const dispatch = useDispatch();
-  // const [vehicleType, setVehicleType] = useState('camperWindow');
+
   const vehicleType = useSelector(selectVehicleType);
   const handleChange = (e) => {
     dispatch(changeVehicleType(e.target.value));

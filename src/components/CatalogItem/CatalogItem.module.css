@@ -3,7 +3,6 @@
   border-radius: 20px;
   padding: 24px;
   width: 888px;
-  height: 358px;
   display: flex;
   gap: 24px;
 }
@@ -103,9 +102,6 @@
   text-overflow: ellipsis;
 }
 
-.additionalInfo {
-}
-
 .moreBtn {
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -119,6 +115,7 @@
   height: 56px;
   background: #e44848;
   transition: background-color 0.3s ease;
+  border: none;
 }
 
 .moreBtn:hover {
@@ -127,4 +124,20 @@
 
 .locationIcon {
   margin-right: 4px;
+}
+
+.favbtn {
+  background: transparent;
+  border: none;
+}
+
+.favbtn:hover {
+  border: none;
+}
+
+.favbtn:active {
+  border: none;
+}
+.favbtn:focus {
+  border: none;
 }

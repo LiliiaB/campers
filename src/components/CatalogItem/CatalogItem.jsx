@@ -30,8 +30,15 @@ export const CatalogItem = ({ item }) => {
           <div className={css.nameWrapper}>
             <h3 className={css.name}>{item.name}</h3>
             <div className={css.priceWrapper}>
-              <h3 className={css.price}>€ {item.price.toFixed(2)}</h3>
+              <h3 className={css.price}>
+                €
+                {new Intl.NumberFormat("de-DE", {
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
+                }).format(item.price)}
+              </h3>
               <button
+                className={css.favbtn}
                 type="button"
                 onClick={() => dispatch(toggleFavorite(item._id))}
               >

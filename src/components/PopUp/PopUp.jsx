@@ -34,7 +34,14 @@ export const PopUp = ({ modalIsOpen, onCloseModal, item }) => {
           </p>
         </div>
 
-        <h3 className={css.price}>€ {item.price.toFixed(2)}</h3>
+        <h3 className={css.price}>
+          €
+          {new Intl.NumberFormat("de-DE", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          }).format(item.price)}
+        </h3>
+
         <PerfectScrollbar className={css.scrollContainer}>
           <ul className={css.list}>
             {item.gallery.map((image, idx) => {
