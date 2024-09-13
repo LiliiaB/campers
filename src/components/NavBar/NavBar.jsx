@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import css from "./Navigation.module.css";
+import css from "./NavBar.module.css";
 import clsx from "clsx";
 import logo from "../../assets/logo.png";
 
@@ -7,7 +7,7 @@ const buildLinkClass = ({ isActive }) => {
   return clsx(css.link, isActive && css.active);
 };
 
-export const Navigation = () => {
+export const NavBar = () => {
   return (
     <nav className={css.nav}>
       <Link to="/" className={css.logo}>

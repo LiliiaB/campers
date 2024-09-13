@@ -1,14 +1,13 @@
-import { TailSpin } from "react-loader-spinner";
+import { ThreeCircles } from "react-loader-spinner";
 
-const Loader = () => {
+export const Loader = () => {
   return (
-    <TailSpin
+    <ThreeCircles
       visible={true}
-      height="80"
-      width="80"
-      color="#475467"
-      ariaLabel="tail-spin-loading"
-      radius="1"
+      height="100"
+      width="100"
+      color="#4760b2"
+      ariaLabel="three-circles-loading"
       wrapperStyle={{}}
       wrapperClass=""
     />

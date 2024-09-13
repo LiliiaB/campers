@@ -4,12 +4,12 @@ import "./App.css";
 import { HomePage } from "./pages/HomePage";
 import { FavoritePage } from "./pages/FavoritesPage";
 import { CatalogPage } from "./pages/CatalogPage";
-import { Navigation } from "./components/Navigation/Navigation";
+import { NavBar } from "./components/NavBar/NavBar";
 
 function App() {
   return (
     <>
-      <Navigation />
+      <NavBar />
 
       <Routes>
         <Route path="/" element={<HomePage />} />

@@ -22,7 +22,6 @@ const campersSlice = createSlice({
   name: "campers",
   initialState: campersInitialState,
   reducers: {
-    //toggle state of favorite
     toggleFavorite: (state, action) => {
       const id = action.payload;
       const index = state.favorites.indexOf(id);
@@ -35,7 +34,7 @@ const campersSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      //fetch contacts
+
       .addCase(fetchCampers.pending, isPending)
       .addCase(fetchCampers.fulfilled, (state, action) => {
         state.loading = false;

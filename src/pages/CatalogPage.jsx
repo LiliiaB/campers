@@ -16,7 +16,7 @@ export const CatalogPage = () => {
   }, [dispatch]);
 
   return (
-    <main className={css.main}>
+    <div className={css.main}>
       {isLoading ? (
         <Loader />
       ) : (
@@ -25,6 +25,6 @@ export const CatalogPage = () => {
           <CatalogList />
         </>
       )}
-    </main>
+    </div>
   );
 };
