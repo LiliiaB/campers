@@ -13,18 +13,19 @@ export const Navigation = () => {
       <Link to="/" className={css.logo}>
         <img src={logo} alt="Logo" />
       </Link>
+      <div className={css.navlinks}>
+        <NavLink to="/" className={buildLinkClass}>
+          Home
+        </NavLink>
 
-      <NavLink to="/" className={buildLinkClass}>
-        Home
-      </NavLink>
+        <NavLink to="/catalog" className={buildLinkClass}>
+          Catalog
+        </NavLink>
 
-      <NavLink to="/catalog" className={buildLinkClass}>
-        Catalog
-      </NavLink>
-
-      <NavLink to="/favorites" className={buildLinkClass}>
-        Favorite
-      </NavLink>
+        <NavLink to="/favorites" className={buildLinkClass}>
+          Favorite
+        </NavLink>
+      </div>
     </nav>
   );
 };
