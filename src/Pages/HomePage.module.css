@@ -1,9 +1,4 @@
-.main {
-  padding-top: 50px;
-}
-
 .contaier {
-  width: 1312px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -14,24 +9,13 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #475467;
+  color: #101828;
 }
 
 .hero {
-  background-image: url("../../assets/camper.jpg");
+  background-image: url("../assets/camper.jpg");
   background-size: cover;
   background-position: center;
   height: 400px;
   position: relative;
-}
-
-.list {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.25;
-  color: #e44848;
 }

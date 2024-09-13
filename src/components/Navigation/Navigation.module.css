@@ -1,22 +1,16 @@
-.header {
+.nav {
   background-color: #f7f7f7;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  color: #fff;
-  padding: 20px;
-}
-
-.container {
-  margin: 0 auto;
   display: flex;
+  align-items: baseline;
+  padding: 24px;
 }
 
 .logo {
-  margin-right: 50px;
-}
-
-.list {
-  display: flex;
-  list-style-type: none;
+  margin-right: 450px;
 }
 
 .link {
@@ -26,5 +20,9 @@
 }
 
 .active {
-  color: #ffc531;
+  color: #e44848;
+}
+
+.link:hover {
+  color: #101828;
 }
