@@ -1,0 +1,30 @@
+.header {
+  background-color: #f7f7f7;
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+}
+
+.link {
+  font-size: 24px;
+  color: #101828;
+  margin-right: 40px;
+}
+
+.active {
+  color: #ffc531;
+}

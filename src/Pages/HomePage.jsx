@@ -1,23 +1,31 @@
 import css from "./HomePage.module.css";
 
-export default function HomePage() {
+export const HomePage = () => {
   return (
-    <div className={css.main}>
-      <div className={css.hero}>
-        <h1 className={css.title}>IL MONDO DEI COLORI DEI BAMBINI</h1>
-        <h2>ISPIRAZIONE E CREATIVITA</h2>
-        <h3>01-16 GIUGNO 2024</h3>
-      </div>
-      <div className={css.mostra}>
-        <p className={css.textmostra}>
-          Questa mostra, organizzata dalla Galleria "Veneto Art Gallery", è una
-          celebrazione della Creatività infantile espressa su carta ed altri
-          materiali. Vengono esposti disegni e lavoretti dei bambini provenienti
-          da varie scuole, associazioni e piccoli artisti che condividono con
-          gioia le loro visioni con diversi materiali, tra cui anche la
-          plastilina.
+    <main className={css.main}>
+      <section className={css.hero}>
+        <ul className={css.list}>
+          <li className={css.item}>+ Wide Selection</li>
+          <li className={css.item}>+ Easy Booking</li>
+          <li className={css.item}>+ Customizable Options</li>
+        </ul>
+      </section>
+
+      <div className={css.contaier}>
+        <h1>Campersland</h1>
+        <p>
+          We provide camper van rental services in Ukraine. Here you can choose
+          the camper of you dreams. Go to the catalog to choose one. Welcome to
+          Your Adventure on Wheels Discover the freedom of the open road with
+          our premium camper van rentals. Whether you&apos;re planning a weekend
+          getaway or an epic cross-country journey, our well-equipped campers
+          are your perfect home away from home. Explore breathtaking landscapes,
+          experience the thrill of outdoor living, and create unforgettable
+          memories with loved ones—all at your own pace.
         </p>
       </div>
-    </div>
+    </main>
   );
-}
+};
+
+export default HomePage;

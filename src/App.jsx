@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
-import HomePage from "./pages/HomePage/HomePage";
-import { FavoritePage } from "./pages/FavoritesPage/FavoritesPage";
-import { CatalogPage } from "./pages/CatalogPage/CatalogPage";
+import { HomePage } from "./pages/HomePage";
+import { FavoritePage } from "./pages/FavoritesPage";
+import { CatalogPage } from "./pages/CatalogPage";
 import { Navigation } from "./components/Navigation/Navigation";
 
 function App() {
